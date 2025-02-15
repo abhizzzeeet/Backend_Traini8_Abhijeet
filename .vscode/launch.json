@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Traini8Application<traini8>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.traini8.Traini8Application",
+            "projectName": "traini8",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
