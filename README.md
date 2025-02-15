@@ -63,6 +63,13 @@ docker-compose down
 
 ## Project Overview
 
+Text Stack : JAVA Spring Boot
+
+Database: MongoDB
+
+
+The database is deployed in MongoDB Atlas.
+
 ### Contains 3 APIs
 
 ### 1. POST request to add a training center to the database:
@@ -131,3 +138,8 @@ Request URL: `http://localhost:<PORT>/api/training-centers/search?query=<search_
 Output: list of training center objects in json response as in 1st point
 
 ![Screenshot 2025-02-15 115720](https://github.com/user-attachments/assets/f0d45147-277f-4068-8943-cdd41de92f52)
+
+### Some other images : 
+
+![image](https://github.com/user-attachments/assets/e4f388e1-7715-4aa9-b4e2-4176c38af720)
+
