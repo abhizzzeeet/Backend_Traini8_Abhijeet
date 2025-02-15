@@ -61,11 +61,11 @@ docker-compose down
 ```
 
 
-##Project Overview
+## Project Overview
 
-###Contains 3 APIs
+### Contains 3 APIs
 
-###1. POST request to add a training center to the database:
+### 1. POST request to add a training center to the database:
 
 Request Type: POST
 
@@ -105,7 +105,7 @@ Output: Returns the added data (a training center object) in JSON response. Exam
   "contactPhone": "8972284977"
 }
 
-###2. GET request to fetch all training centers data from the database:
+### 2. GET request to fetch all training centers data from the database:
 
 Request Type: GET
 
@@ -113,7 +113,7 @@ Request URL: http://localhost:<PORT>/api/training-centers
 
 Output: list of training center objects in json response as in 1st point
 
-3. GET request to filter training center data whose any field's value matches the query passed:
+### 3. GET request to filter training center data whose any field's value matches the query passed:
 
 Request Type: GET
 
