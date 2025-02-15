@@ -58,6 +58,7 @@ To stop the running containers, use:
 
 ```bash
 docker-compose down
+```
 
 
 ##Project Overview
