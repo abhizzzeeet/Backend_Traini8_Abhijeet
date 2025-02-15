@@ -73,6 +73,7 @@ Request URL: `http://localhost:<PORT>/api/training-centers`
 
 Request Body (JSON):
 
+```bash
 {
   "centerName": "Abhijeet Training",
   "centerCode": "WB5658UB87",
@@ -87,6 +88,7 @@ Request Body (JSON):
   "contactEmail": "abhijeetbasfore@gmail.com",
   "contactPhone": "8972284977"
 }
+```
 
 Output: Returns the added data (a training center object) in JSON response. Example output:
 
