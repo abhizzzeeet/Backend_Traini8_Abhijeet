@@ -1,4 +1,4 @@
-# Traini8 Backend - Spring Boot
+# Traini8 Backend - Spring Project
 
 ## Prerequisites
 
