@@ -69,7 +69,7 @@ docker-compose down
 
 Request Type: POST
 
-Request URL: http://localhost:<PORT>/api/training-centers
+Request URL: `http://localhost:<PORT>/api/training-centers`
 
 Request Body (JSON):
 
