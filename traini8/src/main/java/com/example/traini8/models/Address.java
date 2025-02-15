@@ -11,6 +11,7 @@ public class Address {
     
     private String detailedAddress; // Optional
     
+    //mandatory fields
     @NotNull(message = "City cannot be null")
     @NotBlank(message = "City cannot be empty")
     private String city;

@@ -13,19 +13,22 @@ public class TrainingCenterService {
     @Autowired
     private TrainingCenterRepository repository;
     
+    // Saves a new training center to the database
     public TrainingCenter createTrainingCenter(TrainingCenter center) {
         return repository.save(center);
     }
     
+    // Retrieves all training centers from the database
     public List<TrainingCenter> getAllTrainingCenters() {
         return repository.findAll();
     }
 
+    // Searches training centers based on various attributes
     public List<TrainingCenter> searchTrainingCenters(String query) {
         List<TrainingCenter> allCenters = repository.findAll();
         
-        return allCenters.stream()
-                .filter(tc -> 
+        return allCenters.stream()  // used stream operation to simplify filter code
+                .filter(tc ->    // matching passed query with all attribute values of TrainingCenter object
                         tc.getCenterName().toLowerCase().contains(query.toLowerCase()) ||
                         tc.getCenterCode().toLowerCase().contains(query.toLowerCase()) ||
                         (tc.getAddress() != null && (

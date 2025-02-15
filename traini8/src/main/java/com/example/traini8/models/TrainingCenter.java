@@ -15,24 +15,24 @@ import java.util.List;
 @AllArgsConstructor
 public class TrainingCenter {
     @Id
-    private String id;
+    private String id; // Unique identifier
+    
+    @NotBlank // ensures field is not blank i.e., a value is passed in request
+    @Size(max = 40) // ensures max size 40
+    private String centerName; 
     
     @NotBlank
-    @Size(max = 40)
-    private String centerName;
-    
-    @NotBlank
-    @Pattern(regexp = "^[a-zA-Z0-9]{12}$", message = "CenterCode must be exactly 12 alphanumeric characters")
-    private String centerCode;
+    @Pattern(regexp = "^[a-zA-Z0-9]{12}$", message = "CenterCode must be exactly 12 alphanumeric characters")  // ensures size to be 12 and characters are alphanumeric
+    private String centerCode; // Unique 12-character center code
     
     @NotNull
-    @Valid
-    private Address address;
+    @Valid // validates address sub fields if is empty or not
+    private Address address;  // Address details
     
     private int studentCapacity;
     private List<String> coursesOffered;
     
-    private Instant createdOn = Instant.now();
+    private Instant createdOn = Instant.now(); // Timestamp of creation
     
     @Email
     private String contactEmail;

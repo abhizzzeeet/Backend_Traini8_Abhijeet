@@ -16,16 +16,19 @@ public class TrainingCenterController {
     @Autowired
     private TrainingCenterService service;
 
+    // Create a new training center
     @PostMapping
     public ResponseEntity<TrainingCenter> createTrainingCenter(@Valid @RequestBody TrainingCenter center) {
         return ResponseEntity.ok(service.createTrainingCenter(center));
     }
 
+    // Retrieve all training centers
     @GetMapping
     public ResponseEntity<List<TrainingCenter>> getAllTrainingCenters() {
         return ResponseEntity.ok(service.getAllTrainingCenters());
     }
 
+    // Search training centers by query parameter
     @GetMapping("/search")
     public ResponseEntity<List<TrainingCenter>> searchTrainingCenters(@RequestParam String query) {
         return ResponseEntity.ok(service.searchTrainingCenters(query));
