@@ -22,12 +22,12 @@ Download from: [Git SCM](https://git-scm.com/downloads)
 Run the following command inside an empty directory:
 
 ```bash
-git clone -b main https://github.com/abhizzzeeet/Backend_Traini8_Abhijeet.git
+git clone -b main https://github.com/abhizzzeeet/Backend_Traini8_AbhijeetBasfore.git
 ```
 
 **OR**
 
-Download the ZIP file from GitHub: [Repository Link](https://github.com/abhizzzeeet/Backend_Traini8_Abhijeet)  
+Download the ZIP file from GitHub: [Repository Link](https://github.com/abhizzzeeet/Backend_Traini8_AbhijeetBasfore.git)  
 Then, extract it into an empty directory.
 
 ### Step 3: Navigate to the project folder
