@@ -108,6 +108,8 @@ Output: Returns the added data (a training center object) in JSON response. Exam
   "contactPhone": "8972284977"
 }
 ```
+![Screenshot 2025-02-15 115410](https://github.com/user-attachments/assets/b540d23b-eddd-4ee2-9bb1-2c95205a5f51)
+
 
 ### 2. GET request to fetch all training centers data from the database:
 
@@ -117,6 +119,9 @@ Request URL: `http://localhost:<PORT>/api/training-centers`
 
 Output: list of training center objects in json response as in 1st point
 
+![Screenshot 2025-02-15 115705](https://github.com/user-attachments/assets/ab298d2f-e20f-43d3-a1f2-542a97909f46)
+
+
 ### 3. GET request to filter training center data whose any field's value matches the query passed:
 
 Request Type: GET
@@ -124,3 +129,5 @@ Request Type: GET
 Request URL: `http://localhost:<PORT>/api/training-centers/search?query=<search_text>`
 
 Output: list of training center objects in json response as in 1st point
+
+![Screenshot 2025-02-15 115720](https://github.com/user-attachments/assets/f0d45147-277f-4068-8943-cdd41de92f52)
