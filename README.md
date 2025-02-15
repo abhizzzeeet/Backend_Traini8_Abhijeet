@@ -92,6 +92,7 @@ Request Body (JSON):
 
 Output: Returns the added data (a training center object) in JSON response. Example output:
 
+```bash
 {
   "centerName": "Abhijeet Training",
   "centerCode": "WB5658UB87",
@@ -106,12 +107,13 @@ Output: Returns the added data (a training center object) in JSON response. Exam
   "contactEmail": "abhijeetbasfore@gmail.com",
   "contactPhone": "8972284977"
 }
+```
 
 ### 2. GET request to fetch all training centers data from the database:
 
 Request Type: GET
 
-Request URL: http://localhost:<PORT>/api/training-centers
+Request URL: `http://localhost:<PORT>/api/training-centers`
 
 Output: list of training center objects in json response as in 1st point
 
@@ -119,6 +121,6 @@ Output: list of training center objects in json response as in 1st point
 
 Request Type: GET
 
-Request URL: http://localhost:<PORT>/api/training-centers/search?query=<search_text>
+Request URL: `http://localhost:<PORT>/api/training-centers/search?query=<search_text>`
 
 Output: list of training center objects in json response as in 1st point
