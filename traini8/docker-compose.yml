@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  traini8:
+    image: traini8-app
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - MONGO_URI=mongodb+srv://abhijeetbasfore:Abhijeet%40123@cluster0.gknqbto.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    restart: always
